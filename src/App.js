@@ -13,9 +13,9 @@ import HomePageFirstContainerImageSlide from "./HomePageFirstContainerImageSlide
 function App() {
   const handleDownloadApp = () => {
     const link = document.createElement("a");
-    /* link.href =
-      "https://drive.google.com/file/d/1mVAcglaeU9sD7GGzHAW-m9s5y_-hqW3q/view?usp=drive_link"; */
-    link.href = "%PUBLIC_URL%/SkyTickerApp/app-release.apk";
+    link.href =
+      "https://drive.google.com/file/d/1mVAcglaeU9sD7GGzHAW-m9s5y_-hqW3q/view?usp=drive_link";
+    /* link.href = "%PUBLIC_URL%/SkyTickerApp/app-release.apk"; */
     link.download = "SkyTicker.apk";
     document.body.appendChild(link);
     link.click();
