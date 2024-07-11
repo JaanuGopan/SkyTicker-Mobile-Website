@@ -1,38 +1,108 @@
-.App {
-  text-align: center;
-}
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.main-container {
+  width: 100%;
+  height: 100%;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
 }
 
-.App-link {
-  color: #61dafb;
+.main-container-heading {
+  background: linear-gradient(to bottom right, #23a2f1, #023d61);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  text-align: center;
+  font-size: 2em;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+.main-container-image {
+  width: 90%;
+  height: 100%;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.mobile-app-download-button {
+  color: #fff;
+  width: 200px;
+  height: 40px;
+  background-color: #0063a0;
+  border: 2px solid #0063a0;
+  border-radius: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-decoration: none;
+  cursor: pointer;
+  font-size: 16px;
+}
+
+.mobile-app-download-button:hover {
+  background-color: #025183;
+  border-color: #025183;
+  color: #fff;
+}
+
+.mobile-app-download-button:active {
+  background-color: #0063a0;
+  border-color: #0063a0;
+  color: #fff;
+}
+
+.main-container-left-side {
+  width: 100%;
+  height: auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.main-container-left-side label {
+  margin: 20px;
+  font-size: large;
+  
+}
+
+.main-container-left-side-logo {
+  width: 50%;
+  max-width: 200px;
+}
+
+.main-container-right-side {
+  width: 100%;
+  height: auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+@media (min-width: 768px) {
+  .main-container-image {
+    flex-direction: row;
   }
-  to {
-    transform: rotate(360deg);
+
+  .main-container-left-side {
+    width: 50%;
+  }
+
+  .main-container-right-side {
+    width: 50%;
+  }
+}
+
+@media (max-width: 768px) {
+  .main-container-image {
+    flex-direction: column;
+  }
+
+  .main-container-left-side-logo {
+    width: 70%;
   }
 }
